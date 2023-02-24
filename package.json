@@ -1,0 +1,44 @@
+{
+  "name": "@wangminghua/reactive",
+  "version": "0.0.1",
+  "description": "JS响应式代码",
+  "main": "./dist/reactive.umd.js",
+  "module": "./dist/reactive.es.js",
+  "types": "./dist/types/reactive.d.ts",
+  "scripts": {
+    "build": "rimraf -rf ./dist && rollup --config && tsc",
+    "serve": "http-server ./"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "reactive"
+  ],
+  "author": "wangminghua",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^14.1.0",
+    "@rollup/plugin-typescript": "^8.5.0",
+    "http-server": "^14.1.1",
+    "lodash": "^4.17.21",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WangMingHua111/reactive.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WangMingHua111/reactive/issues"
+  },
+  "homepage": "https://github.com/WangMingHua111/reactive#readme",
+  "directories": {
+    "test": "test"
+  }
+}
